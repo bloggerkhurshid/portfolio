@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Body Style Part */
+
+.main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Right Style Part */
+
+.right{
+    height: 100%;
+    width: 50%;
+    background: url("https://images.pexels.com/photos/5483070/pexels-photo-5483070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=20");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+
+/* Navigation Style Part */
+
+.nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    align-items: center;
+}
+
+
+/* Nav Bar logo*/
+
+.nav h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 110px;
+    text-transform: uppercase;
+    display: none;
+    color: royalblue;
+}
+
+
+/* Nav Bar logo*/
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: royalblue;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* Left Body Style Part */
+
+.left{
+    height: 100%;
+    width: 50%;
+}
+
+
+.contents{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Side Social Widget*/
+
+.social{
+    background-color: royalblue;
+    width: 7%;
+    display: flex;
+    border-radius: 0px 30px 30px 0;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Social Media Icons Size*/
+
+.social img{
+    height: 40px;
+    width: 40px;
+    object-fit: scale-down;
+    filter: invert(96%) sepia(3%) saturate(50%) hue-rotate(321deg) brightness(117%) contrast(100%);
+}
+
+
+.social ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+ 
+/* Main Body Text*/
+
+.main-text{
+    width: 90%;
+    padding: 60px;
+}
+
+
+.main-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: royalblue;
+}
+
+.main-text h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(81, 81, 81);
+    margin-bottom: 0px;
+}
+
+
+.main-text h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3.4px;
+    text-transform: uppercase;
+    color: rgb(60, 60, 60);
+}
+
+.main-text p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+/* Button Style */
+
+button{
+    height: 40px;
+    width: 100px;
+    background-color: royalblue;
+    border: none;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    font-size:15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Skin Template */
+
+@media only screen and (max-width: 1334px){
+    .nav{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        align-items: center;
+    }
+
+    
+
+    .nav a{
+        font-size: 0px;
+    }
+}
+/* Mobile Skin Template */
+/* Mobile Skin Template */
+/* Mobile Skin Template */
+
+
+@media only screen and (max-width: 730px) {
+    /* Body Style Part */
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100hw;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.nav ul{
+    margin-right: 0px;
+}
+
+.nav h1{
+    font-size: 20px;
+    width: 80%;
+    display: none;
+}
+
+.nav a{
+    font-size: 15px;
+}
+
+/* Left Body Style Part */
+
+.left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social{
+    height: 60%;
+    display: flex;
+    width: auto;
+    border-radius: 0px;
+    width: 100%;
+    background: url("https://images.pexels.com/photos/5483070/pexels-photo-5483070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=20");
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+    background-size: cover;
+    padding: 0;
+    align-items: end;
+    flex-direction: row;
+}
+
+.social img{
+    height: 30px;
+    width: 30px;
+    object-fit: scale-down;
+    filter: invert(96%) sepia(3%) saturate(50%) hue-rotate(321deg) brightness(117%) contrast(100%);
+}
+
+
+.social ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: royalblue;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    align-items: center;
+}
+
+.contents{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+}
+
+.right{
+    display: none;
+
+}
+
+.nav ul{
+    display: none;
+  }
+
+
+/* Main Body Text*/
+
+.main-text{
+    width: 80%;
+    height: 40%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.main-text h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: royalblue;
+}
+
+.main-text h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+}
+
+
+.main-text h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.574);
+}
+
+.main-text p{
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+/* Button Style */
+
+button{
+    height: 30px;
+    width: 80px;
+    background-color: royalblue;
+    border: none;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    font-size:12px;
+    border-radius: 10px;
+}
+
+
+}
